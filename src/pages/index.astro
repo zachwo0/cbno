@@ -1,16 +1,16 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro"
+const title = "Crowded by No One";
 ---
+<BaseLayout title={title}>
+	<section class = "hero">
+		<h2>Welcome to CBNO</h2>
+		<p>Discover our latest music and stay tuned for updates on new releases</p>
+		<a href="#music" class ="cta-button">Listen Now</a>
+	</section>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+	<section id="music" class ="music-section">
+		<h2>Featured Track</h2>
+		<iframe src= "https://www.youtube.com/watch?v=qacRDYaRXN8" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	</section>
+</BaseLayout>
