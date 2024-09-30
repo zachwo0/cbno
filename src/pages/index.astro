@@ -3,10 +3,12 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 const title = "Crowded by No One";
 ---
 <BaseLayout title={title}>
-	<section class = "hero">
+	<section class = "hero" style="background-image:url('/images/banner.webp')">
+	<div class="overlay">
 		<h2>Welcome to CBNO</h2>
 		<p>Discover our latest music and stay tuned for updates on new releases</p>
 		<a href="#music" class ="cta-button">Listen Now</a>
+	</div>
 	</section>
 
 	<section id="music" class ="music-section">
